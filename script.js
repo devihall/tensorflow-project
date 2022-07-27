@@ -24,4 +24,48 @@ const enableWebcamButton = document.getElementById('webcamButton')
 
 
 const status = document.getElementById("status");
-status.innerText = "Loaded TensorFlow.js - version: " + tf.version.tfjs;
+// status.innerText = "Loaded TensorFlow.js - version: " + tf.version.tfjs;
+
+////////check if browser supports webcam access///////
+function getUserMediaSupported(){
+
+    return !!(navigator.mediaDevices &&
+        navigator.mediaDevices.getUserMedia);
+}
+
+//////if webcam is supported then add event listener to call enableCam function/////
+if (getUserMediaSupported()) {
+  enableWebcamButton.addEventListener("click", enableCam);
+} else {
+  console.warn("getUserMedia() is not supported by your browser");
+}
+
+// Enable the live webcam view and start classification.
+function enableCam(event) {
+  // Only continue if the COCO-SSD has finished loading.
+  if (!model) {
+    return;
+  }
+
+  //hide button after click////
+  event.target.classList.add('removed');
+
+  //get parameters from getUsermedia function to get only video and not audio
+  const constraints = {
+    video: true
+  };
+  
+  //start the webcam stream
+  navigator.mediaDevices.getUserMedia(constraints).then(function(stream){
+    video.srcObject = stream;
+    video.addEventListener('loadeddata',predictWebcam)
+  });
+}
+
+// Placeholder function for next step.
+function predictWebcam() {
+}
+
+// Pretend model has loaded so we can try out the webcam code.
+var model = true;
+demosSection.classList.remove("invisible");
