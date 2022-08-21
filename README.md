@@ -1,4 +1,7 @@
-# Readme-generator- a node.js app
+# TensorFlow-project- a smart webcam with TensorFlow.js pretrained machine learning model
+
+## Site
+ [TensorFlow-project]([https://pages.github.com/](https://devihall.github.io/tensorflow-project/)
 
 ## Description
 A webpage that uses machine learning directly in the web browser via TensorFlow.js to classify and detect common objects, (yes, including more than one at a time), from a live webcam stream.
@@ -9,11 +12,11 @@ This can supercharge your regular webcam to identify objects and get the coordin
 
 - [Description](#description)
 - [License](#license)
-- [Github](#github)
+- [Site](#site)
 
 
 ## Installation
-Install Dependencies
+N.A
 
 ## Usage
 Developer use
