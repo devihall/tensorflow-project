@@ -1,4 +1,5 @@
-# TensorFlow-project- a smart webcam with TensorFlow.js pretrained machine learning model
+# TensorFlow-project 
+-a smart webcam with TensorFlow.js pretrained machine learning model
 
 ## Site
  [TensorFlow-project]([https://pages.github.com/](https://devihall.github.io/tensorflow-project/)
@@ -25,6 +26,10 @@ Developer use
 Open Source
 
 ## Credits
-Node Package Manager, Inquirer
+<img width="345" alt="Screen Shot 2022-08-20 at 10 25 58 PM" src="https://user-images.githubusercontent.com/107077794/185772900-2d2e976f-8494-4328-977d-60a6d79e113a.png">
+Google Code Labs Written by Jason Mayes,
+
+![icons8-tensorflow-48](https://user-images.githubusercontent.com/107077794/185772930-8b64e92e-780c-45c2-82c0-a6dbd74caf8b.png)
+TensorFlow.js
 
 
